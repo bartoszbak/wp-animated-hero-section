@@ -1,7 +1,7 @@
 .wp-block-ruby-care-animated-hero {
     position: relative;
     width: 100%;
-    height: 148vh;
+    height: 128vh;
     overflow: hidden;
     transition: background-color 0.3s ease;
 
@@ -41,16 +41,16 @@
         padding: 2rem;
 
         .animated-hero-subtitle{
-            margin-top: 6rem;
+            margin-top: 4rem;
             font-weight: 500;
         }
 
         .animated-hero-headline {
-            margin-top: 2rem;
+            margin-top: 1rem;
             color: #000000;
             font-size: 56px;
-            width: 560px;
-            margin-bottom: 2rem;
+            width: 820px;
+  
             position: relative;
             z-index: 3;
             line-height: 1.3;
@@ -257,3 +257,58 @@
         flex-shrink: 0;
     }
 } 
+
+@media (min-width: 1440px) and (min-height: 900px) {
+    .wp-block-ruby-care-animated-hero {
+        height: 128vh;
+        
+        .animated-hero-content {
+            padding: 4.48rem 1rem 1rem 1rem;
+            
+            .animated-hero-subtitle {
+                margin-top: 8rem;
+            }
+
+        }
+        
+        .animated-hero-first-image img {
+            max-width: 360%;
+            max-height: 360%;
+        }
+        
+        .animated-hero-second-image img {
+            max-height: 84vh;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wp-block-ruby-care-animated-hero {
+        height: 100vh;
+        
+        .animated-hero-content {
+            padding: 4.48rem 1rem 1rem 1rem;
+            width: auto;
+            
+            .animated-hero-subtitle {
+                margin-top: 2rem;
+                font-size: 1rem;
+            }
+            
+            .animated-hero-headline {
+                font-size: 42px;
+                margin-top: 0rem;
+                width: auto;
+            }
+        }
+        
+        .animated-hero-first-image img {
+            max-width: 200%;
+            max-height: 200%;
+        }
+        
+        .animated-hero-second-image img {
+            max-height: 60vh;
+        }
+    }
+}
